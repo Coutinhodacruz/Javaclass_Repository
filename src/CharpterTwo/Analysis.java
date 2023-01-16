@@ -8,25 +8,24 @@ public class Analysis {
 
         int passes = 0;
         int failure = 0;
-        int studentCounter = 1;
+        int studentCounter = 0;
 
-        while (studentCounter >= 10);
-        System.out.println("Enter result (1 = paas, 2 = fail):");
-        int result = input.nextInt();
+        while (studentCounter < 10) {
+            System.out.println("Enter result (1 = paas, 2 = fail):");
+            int result = input.nextInt();
 
-        if (result == 1){
-            passes = passes + 1;
-            passes++;
+            if (result == 1) {
+                ++passes;
 
 
-        }else {
-            failure = failure + 1;
-            ++failure;
+            } else if (result == 2){
+                failure++;
+
+            }
+            studentCounter += 1;
         }
-        studentCounter = studentCounter += 1;
-
         System.out.printf("passed: %d%n Failed: %d%n",passes,failure );
-        if (passes < 8){
+        if (passes <= 8){
             System.out.println("Bonus to instructor");
         }
     }

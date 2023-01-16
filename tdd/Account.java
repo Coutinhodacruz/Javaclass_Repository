@@ -14,7 +14,9 @@ public class Account {
     }
 
     public void withdrawal(int cash) {
+
         if (cash > 0 && cash <= balance) balance = balance - cash;
+
     }
 }
 

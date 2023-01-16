@@ -4,14 +4,21 @@ public class PetrolPurchase {
     private String Name;
     private String location;
     private String PetrolType;
+    private double Quantity;
 
-   // private int Quantity;
+    private double pricePerLiter;
 
 
-    public PetrolPurchase() {
+    public PetrolPurchase(String name, String location, String petrolType, int quantity, double pricePerLiter) {
+        this.Name = name;
+        this.PetrolType = petrolType;
+        this.location = location;
+        this.Quantity = quantity;
+        this.pricePerLiter = pricePerLiter;
     }
 
     public void setName(String name) {
+
 
         this. Name = name;
     }
@@ -40,12 +47,28 @@ public class PetrolPurchase {
         return PetrolType;
     }
 
-//    public void setQuantity(int quantity, int i) {
-//     this.Quantity = quantity;
-//    }
-//
-//    public int getQuantity(){
-//        return Quantity;
-//    }
+    public void setQuantity(int quantity) {
+        Quantity = quantity;
+    }
 
+    public void setPricePerLiter(int pricePerLiter) {
+        this.pricePerLiter = pricePerLiter;
+    }
+
+    public double getPricePerLiter() {
+        return pricePerLiter;
+    }
+
+    public double getQuantity() {
+        return Quantity;
+
+    }
+    public void Purchase() {
+        switch (getName()) {
+            case "Toyota Filling Station":
+                break;
+            default:
+                System.out.println();
+        }
+    }
 }

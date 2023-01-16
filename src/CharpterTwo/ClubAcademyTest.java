@@ -4,11 +4,10 @@ import java.util.Scanner;
 
 public class ClubAcademyTest {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         ClubAcademy club = new ClubAcademy();
 
 
-        club.setName("Liverpoool Football Club");
+        club.setName("Liverpool Football Club");
         String result = club.getName();
         System.out.printf("Club Name is: %s%n", result);
         System.out.println();

@@ -2,7 +2,7 @@ package ChapterFive;
 
 public class TrianglePrintingProgram {
     public static void main(String[] args) {
-//a
+
         for (int row = 1; row <= 7; row++) {
             for (int column = 1; column <= row; column++) {
                 System.out.print("*");
@@ -11,7 +11,7 @@ public class TrianglePrintingProgram {
         }
         System.out.println();
 
-//b
+
         int total = 6;
         for (int row = 1; row <= 7; row++) {
             for (int num = 1; num <= total; num++) {
@@ -37,7 +37,7 @@ public class TrianglePrintingProgram {
             space--;
 
         }
-        System.out.println();
+//        System.out.println();
 
         int blanks=1;   int shapes = 7;
         for (int row = 0; row <= 7; row++) {

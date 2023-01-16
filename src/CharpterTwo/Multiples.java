@@ -9,9 +9,9 @@ public class Multiples {
         int number1 = input.nextInt();
         System.out.println("Enter a Number");
         int number2 = input.nextInt();
-        if (number1 %number1 == number2)
+        if (number1 == number2)
             System.out.println("doubled");
-        else if (number2 %number2 <= number1) {
+        else if (number2 <= number1) {
             System.out.println("multiple");
         }else {
             System.out.println("Coutinho Dacruz");

@@ -1,16 +1,15 @@
 package CharpterTwo;
 
-import tdd.PriceList;
+import Exercise.PriceList;
 
-import java.util.Scanner;
 
-public class SuperMarketMain {
+public class   SuperMarketMain {
     public static void main(String[] args) {
         PriceList priceList = new PriceList();
-        Scanner input = new Scanner(System.in);
-        System.out.println("Welcome \n" + priceList.displaymenu());
-        int userInput = input.nextInt();
-        priceList.getUserInput(userInput);
+
+        System.out.println("Welcome \n" + priceList.displayMenu());
+        priceList.getUserInput();
+        priceList.loopUserInput();
     }
 }
 

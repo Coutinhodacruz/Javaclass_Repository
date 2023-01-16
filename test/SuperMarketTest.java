@@ -1,5 +1,5 @@
 import org.junit.jupiter.api.Test;
-import tdd.PriceList;
+import Exercise.PriceList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -42,7 +42,7 @@ public class SuperMarketTest {
     @Test
     void UserInput(){
         PriceList priceList = new PriceList();
-        int userInput = priceList.getUserInput(4);
+        int userInput = priceList.getUserInput();
         assertEquals(0, userInput);
     }
 }

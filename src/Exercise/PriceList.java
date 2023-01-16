@@ -1,4 +1,4 @@
-package tdd;
+package Exercise;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class PriceList {
 
 
 
-
+    int totalPriceOfAllProducts;
     int bookQuantity;
 
     int bagQuantity;
@@ -20,7 +20,7 @@ public class PriceList {
     int shoeQuantity;
 
     Scanner scanner = new Scanner(System.in);
-    public String displaymenu() {
+    public String displayMenu() {
         return ("""
                 press 1 for book
                 press 2 for shoe
@@ -46,7 +46,10 @@ public class PriceList {
         return totalShoePrice;
     }
 
-    public int getUserInput(int userInput) {
+    public int getUserInput() {
+        int userInput;
+        userInput = scanner.nextInt();
+
         if (userInput == 1){
 
             System.out.println("The price of each book is 200.\n" +
@@ -71,8 +74,27 @@ public class PriceList {
             System.out.println(totalBagPrice);
             return totalBagPrice;
         }else{
-            System.out.println("You no get watin u won buy");
-        }
-        return 0;
+            System.out.println("Go and come back later");
+        }return 0;
+    }
+    public  void loopUserInput(){
+        String usersChoice;
+        do {
+            System.out.println("Do you want to continue? yes or no");
+            usersChoice = scanner.next();
+
+            if (usersChoice.equals("yes")){
+                System.out.println(displayMenu());
+                getUserInput();
+            } else if (usersChoice.equals("no")) {
+                 totalPriceOfAllProducts = totalBagPrice + totalShoePrice + totalBookPrice;
+                System.out.println();
+                System.out.println("The total price of your purchase is " + totalPriceOfAllProducts);
+                System.out.println("Thanks for your patronage");
+            }else{
+                System.out.println("invalid selection");
+            }
+        }while (usersChoice.equals("yes"));
+
     }
 }

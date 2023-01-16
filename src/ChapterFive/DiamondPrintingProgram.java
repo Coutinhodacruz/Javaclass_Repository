@@ -4,8 +4,11 @@ public class DiamondPrintingProgram {
     public static void main(String[] args) {
         int row;
         row = 5;
-        upperDiamond(row, 0); // print uper part of triangle
+
+        upperDiamond(row, 0); // print upper part of triangle
         lowerDiamond(row, 1); // print lower part of diamond
+
+
 
     }
 

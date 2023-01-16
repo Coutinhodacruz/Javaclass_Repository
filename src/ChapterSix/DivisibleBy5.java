@@ -27,4 +27,5 @@ public class DivisibleBy5 {
         System.out.println(total + count);
 
     }
+
 }
