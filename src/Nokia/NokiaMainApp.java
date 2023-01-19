@@ -1,4 +1,4 @@
-package Nokia;
+ package Nokia;
 
 public class NokiaMainApp {
         public static void main(String[] args) {
@@ -7,6 +7,7 @@ public class NokiaMainApp {
             System.out.println(nokia3310.displayMenu());
 
             nokia3310.optionMeu();
+
 
 
 

@@ -11,13 +11,13 @@ public class Nokia {
                 Welcome to Nokia 3310!!!
                 
                 Enter:
-                1 -> for Phonebook
-                2 -> for Message
-                3 -> for Call register
-                4 -> for Settings
-                5 -> for Games
-                6 -> for Extra
-                7 -> for Multimedia
+                1 -> For Phonebook
+                2 -> For Message
+                3 -> For Call register
+                4 -> For Settings
+                5 -> For Games
+                6 -> For Extra
+                7 -> For Multimedia
                 8 -> For Camera
                 9 -> For T Zone
                 10 -> For Sim Service""";
@@ -80,7 +80,7 @@ public class Nokia {
         userInput = scanner.nextInt();
         switch (userInput){
             case 1:
-                System.out.println("create message\n");
+                System.out.println("create a message\n");
                 System.out.println("press 1 to go back and 0 for menu");
                userInput = scanner.nextInt();
                 if (userInput == 1){
@@ -92,7 +92,7 @@ public class Nokia {
                     System.out.println("Invalid input");
                 break;
             case 2:
-                System.out.println("inbox\n");
+                System.out.println("You have 10 inbox \n");
                 System.out.println("press 1 to go back and 0 for menu");
                 userInput = scanner.nextInt();
                 if (userInput == 1){
@@ -682,33 +682,36 @@ public class Nokia {
                 simServices();
             default:
                 System.out.println("invalid");
-                promptToContinue();
+
 
 
         }
-
-
-    }
-
-
-    private void promptToContinue() {
-
+        String userChoice;
+        do {
             System.out.println("Do you wish to continue? yes/no");
-            String userChoice = scanner.next();
+            userChoice = scanner.next();
 
             if (userChoice.equalsIgnoreCase("yes")){
                 System.out.println(displayMenu());
                 displayMenu();
-                optionMeu();
+
 
             } else if (userChoice.equalsIgnoreCase("no")) {
                 System.out.println("Thank you for using Nokia 3310");
 
             }else
                 System.out.println("Invalid input");
+        }while (userChoice.equals("yes"));
 
 
     }
+
+
+
+
+
+
+
 
 
 }
