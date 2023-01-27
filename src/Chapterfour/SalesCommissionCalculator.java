@@ -6,7 +6,7 @@ public class SalesCommissionCalculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        double commission;
+        double commission = 0;
         double earning;
         double gross_sales_in_the_week;
         double sold_1_items;
@@ -28,7 +28,7 @@ public class SalesCommissionCalculator {
         sold_4_items = input.nextDouble();
         input.nextLine();
         weekly_salary = 200;
-        gross_sales_in_the_week = sold_1_items * 239.99 + sold_2_items * 129.75 + sold_3_items * 99.95 + sold_4_items * 350.89;
+        gross_sales_in_the_week = sold_1_items + sold_2_items + sold_3_items + sold_4_items;
         commission = gross_sales_in_the_week * 0.09;
         earning = weekly_salary + commission;
 

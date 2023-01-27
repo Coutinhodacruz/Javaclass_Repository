@@ -6,6 +6,9 @@ public class ComputerAssistedInstructionMain {
         ComputerAssistedInstruction computerAssistedInstruction = new ComputerAssistedInstruction();
 
         computerAssistedInstruction.computedAssisted();
+        computerAssistedInstruction.startTest();
+
+
 
     }
 }

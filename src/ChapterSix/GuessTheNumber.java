@@ -19,7 +19,7 @@ public class GuessTheNumber {
                             + " between 1 to 100."
                             + "Guess the number"
                             + " within 5 trials.");
-            for (int i = 0; i < attempt; i++) {
+            for (int i = 0; i <= attempt; i++) {
                 System.out.println("Guess the number");
                 guess = input.nextInt();
 
@@ -33,7 +33,10 @@ public class GuessTheNumber {
                             "The number is "
                                     + "greater than " + guess);
                 }
-
+                if (number <= guess && i == attempt +1){
+                    System.out.println("The number is lesser than " + guess);
+                }else
+                    System.out.println("invalid");
             }
             if (i == attempt){
                 System.out.println(

@@ -2,7 +2,7 @@ package CharpterTwo;
 
 public class Loops {
     public static void main(String[] args) {
-      /* int counter = 0;
+       int counter = 0;
         while (counter <= 5){
             System.out.println(counter);
             counter++;
@@ -14,7 +14,7 @@ public class Loops {
         do {
             System.out.println(countNo);
             countNo++;
-        }while (countNo <= 5);*/
+        }while (countNo <= 5);
 
         for (int i = 1; i <= 8; i++) {
             for (int column = 1; column <= i; column++) {

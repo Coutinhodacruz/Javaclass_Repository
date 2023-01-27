@@ -10,9 +10,9 @@ public class SuperMarketTest {
         //given a price list in a superMarket
         PriceList priceList = new PriceList();
         //display menu - shoe, bag, book
-        String menu = priceList.displaymenu();
+        String menu = priceList.displayMenu();
         //check
-        assertEquals(menu, priceList.displaymenu());
+        assertEquals(menu, priceList.displayMenu());
     }
 
     @Test
