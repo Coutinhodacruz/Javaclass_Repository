@@ -15,8 +15,8 @@ public class GradeBookMain {
                 {87, 93, 73}};
 
 
-        GradeBook gradeBook = new GradeBook("CS101 Introduction to Java Programming", gradesArray);
-        System.out.printf("Welcome to the grade book for%n%s%n%n",gradeBook.getCourseName());
+        GradeBook gradeBook = new GradeBook("Semicolon Programming School ", gradesArray);
+        System.out.printf("Welcome to the grade book for%n%s%n%n\n ",gradeBook.getCourseName());
         gradeBook.processGrade();
     }
 }

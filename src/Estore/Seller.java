@@ -1,2 +1,4 @@
-package Estore;public class Seller {
+package Estore;
+
+public class Seller extends Users{
 }

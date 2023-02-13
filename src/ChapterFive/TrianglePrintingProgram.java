@@ -40,10 +40,10 @@ public class TrianglePrintingProgram {
 //        System.out.println();
 
         int blanks=1;   int shapes = 7;
-        for (int row = 0; row <= 7; row++) {
-            for (int star = 0; star <= 7; star++){
+        for (int row = 0; row <= 8; row++) {
+            for (int star = 0; star <= 8; star++){
                 System.out.print("");
-                star*=8;
+//                star*=8;
             }
             System.out.println();
             for (int p = 1; p <= blanks; p++) {

@@ -85,9 +85,9 @@ public class GradeBook {
                 System.out.printf("%02d-%02d: ", count * 10, count * 10 + 9);
             }
 
-            for (int stars = 0; stars < frequency[count]; stars++) {
-                System.out.print("*");
-            }
+//            for (int stars = 0; stars < frequency[count]; stars++) {
+//                System.out.print("*");
+//            }
             System.out.println();
 
         }
@@ -115,6 +115,7 @@ public class GradeBook {
             System.out.printf("%9.2f%n",average);
 
         }
+
     }
 
 }

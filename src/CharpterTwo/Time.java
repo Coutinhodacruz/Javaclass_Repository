@@ -29,7 +29,8 @@ public class Time {
     }
 
     public void setMinutes(int minutes) {
-        this.minutes = minutes;
+
+       this.minutes = minutes;
     }
 
     public int getSeconds() {
@@ -40,14 +41,12 @@ public class Time {
     public void setSeconds(int seconds) {
         this.seconds = seconds;
 
-        for (int hours = 1; hours <=23 ; hours++) {
-            System.out.println(hours);
-            int time = (hours * 59) + (minutes * (hours - 59) *(seconds * 23) + 23);
-            hours += minutes;
-            minutes = seconds;
+//        for (int hours = 1; hours <=23 ; hours++) {
+//            System.out.println(hours);
+//            int time = (hours * 59) + (minutes * (hours - 59) *(seconds * 23) + 23);
+//            hours += minutes;
+//            minutes = seconds;
 
-
-        }
 
     }
 
