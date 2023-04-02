@@ -1,7 +1,4 @@
-package CharpterTwo;
-
-import Exercise.PriceList;
-
+package SuperMarket;
 
 public class   SuperMarketMain {
     public static void main(String[] args) {

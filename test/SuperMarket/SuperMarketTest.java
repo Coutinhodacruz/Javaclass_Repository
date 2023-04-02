@@ -1,5 +1,6 @@
+package SuperMarket;
+
 import org.junit.jupiter.api.Test;
-import Exercise.PriceList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

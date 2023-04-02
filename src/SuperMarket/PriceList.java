@@ -1,4 +1,4 @@
-package Exercise;
+package SuperMarket;
 
 import java.util.Scanner;
 

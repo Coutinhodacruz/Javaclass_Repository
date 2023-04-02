@@ -1,3 +1,5 @@
+package CharpterTwo;
+
 import java.util.Scanner;
     public class ExerciseTwo {
 
