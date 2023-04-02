@@ -1,15 +1,36 @@
 package Exercise;
 
+
 public class ClassPractice {
+
     public static void main(String[] args) {
 
-        int[] arrays = {2,8,8,1,5,2,1,3};
+        
 
-        for (int i = 1; i < arrays.length; i+=2) {
 
-            System.out.println(arrays[i]);
+//        List<String> drinks = Arrays.asList("can", "cup");
+//
+//
+//
+//        for (int container = 0; container < drinks.size(); container++)
+//
+//            System.out.print(drinks.get(container) + ",");
 
-        }
+//        String[] os = new String[] { "Mac", "Linux", "Windows" };
+//
+//
+//
+//        Arrays.sort(os);
+//
+//        System.out.println(Arrays.binarySearch(os, "Mac"));
+
+//        int[] arrays = {2,8,8,1,5,2,1,3};
+//
+//        for (int i = 1; i < arrays.length; i+=2) {
+//
+//            System.out.println(arrays[i]);
+//
+//        }
 //        int count = 0;
 //        for (int number : arrays){
 //            boolean countIsOdd = count % 2!= 0;

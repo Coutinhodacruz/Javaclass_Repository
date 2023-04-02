@@ -10,7 +10,7 @@ public class TheSumOfSeries {
         for (int counter = 1; counter <= 100; counter++) {
             System.out.printf("%d ", counter);
             if (counter > sum)
-            sum += counter;
+                sum += counter;
             System.out.printf("\n\n The Sum: %d\n",sum);
 
         }
