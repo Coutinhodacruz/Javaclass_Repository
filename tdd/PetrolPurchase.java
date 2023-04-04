@@ -64,11 +64,9 @@ public class PetrolPurchase {
 
     }
     public void Purchase() {
-        switch (getName()) {
-            case "Toyota Filling Station":
-                break;
-            default:
-                System.out.println();
+        if ("Toyota Filling Station".equals(getName())) {
+        } else {
+            System.out.println();
         }
     }
 }

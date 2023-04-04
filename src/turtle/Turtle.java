@@ -3,7 +3,7 @@ package turtle;
 import static turtle.Direction.*;
 
 public class Turtle {
-    private Position position = new Position(0,0);
+    private final Position position = new Position(0,0);
 
 private boolean penIsDown;
 private Direction direction = EAST;
@@ -83,6 +83,7 @@ private Direction direction = EAST;
     }
     public void moveHorizontalyBy(int numberOfSteps){
         position.setColumn(numberOfSteps + position.getColumn());
+        position.setRow(numberOfSteps + position.getRow());
 
     }
 

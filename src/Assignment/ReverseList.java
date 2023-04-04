@@ -11,7 +11,7 @@ public class ReverseList {
         //No 1
 
 
-        List<Integer> number = new ArrayList<>(Arrays.asList(2,4,6,8,10,12,14,16,18));
+        List<Integer> number = new ArrayList<>(Arrays.asList(2,3,4,5));
         Collections.reverse(number);
         System.out.println(number);
 
@@ -26,13 +26,13 @@ public class ReverseList {
 //    int[] array = {3,4,5,6,7,8};
 //
 //    // NO 1
-////        int max = array[0];
-////        for (int arr:array) {
-////           if (arr > max){
-////               max = arr;
-////           }
-////        }
-////        System.out.println(max);
+//       int max = array[0];
+//        for (int arr:array) {
+//           if (arr > max){
+//               max = arr;
+//           }
+//       }
+//        System.out.println(max);
 //
 ////        No 2
 ////        for (int i = array.length - 1; i >= 0; i--) {
