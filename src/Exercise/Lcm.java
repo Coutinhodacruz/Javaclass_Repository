@@ -1,10 +1,11 @@
 package Exercise;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Lcm {
-    public static int[] getFactor(int number){
+    public int[] getFactor(int number){
         List<Integer> result = new ArrayList<>();
         for (int counter = 2; counter < number; counter++) {
             while (number>0&&number%counter==0){
@@ -17,13 +18,19 @@ public class Lcm {
         return factors;
     }
 
-    private static int[] buldArrayFromList(List<Integer> numbers) {
+    private int[] buldArrayFromList(List<Integer> numbers) {
         int[] factors;
         factors =new int[numbers.size()];
         for (int counter = 0; counter < numbers.size(); counter++) {
             factors[counter] = numbers.get(counter);
         }
         return factors;
+    }
+
+    public static void main(String[] args) {
+        Lcm lcm = new Lcm();
+        System.out.println(Arrays.toString(lcm.getFactor(20)));
+
     }
 
 }

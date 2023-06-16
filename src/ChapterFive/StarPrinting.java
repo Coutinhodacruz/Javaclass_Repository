@@ -8,12 +8,12 @@ public class StarPrinting {
             for (int column = 1; column < row; column++) {
                 System.out.print("*");
             }
-            System.out.print("   ");
+            System.out.print("  ");
             for (int i = star; i >= row; i--) {
                 System.out.print("*");
 
             }
-            System.out.println("   ");
+            System.out.println("  ");
 
         }
     }

@@ -12,7 +12,7 @@ public class AtmMachine {
             accounts[i - 1] = new AccountBank();
         }
 
-        System.out.print("Enter an id (1 - 10): ");
+       JOptionPane.showMessageDialog( null,input("Enter an id (1 - 10): "));
         int id = input.nextInt();
 
         if (id < 1 || id > 10) {
@@ -20,7 +20,7 @@ public class AtmMachine {
         }
 
         while (true) {
-            display(input(""));
+            JOptionPane.showMessageDialog(null,display(input("")));
             System.out.print("Enter a choice: ");
             int choice = input.nextInt();
 
@@ -79,12 +79,12 @@ public class AtmMachine {
     }
 
 
-//    public static void menuDisplay() {
-//        System.out.printf("%nMain menu%n");
-//        System.out.println("1: check balance");
-//        System.out.println("2: withdraw");
-//        System.out.println("3: deposit");
-//        System.out.println("4: exit");
-//    }
+    public static void menuDisplay() {
+        System.out.printf("%nMain menu%n");
+        System.out.println("1: check balance");
+        System.out.println("2: withdraw");
+        System.out.println("3: deposit");
+        System.out.println("4: exit");
+    }
 
 }

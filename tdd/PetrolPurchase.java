@@ -63,10 +63,11 @@ public class PetrolPurchase {
         return Quantity;
 
     }
-    public void Purchase() {
-        if ("Toyota Filling Station".equals(getName())) {
-        } else {
-            System.out.println();
-        }
+    public double Purchase(int quantity, double price) {
+        double value = quantity * price;
+
+
+
+        return value;
     }
 }

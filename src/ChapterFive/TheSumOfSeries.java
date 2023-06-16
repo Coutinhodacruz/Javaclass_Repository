@@ -1,18 +1,13 @@
 package ChapterFive;
 
-import java.util.Scanner;
-
 public class TheSumOfSeries {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int sum = 0;
 
-        for (int counter = 1; counter <= 100; counter++) {
-            System.out.printf("%d ", counter);
-            if (counter > sum)
-                sum += counter;
-            System.out.printf("\n\n The Sum: %d\n",sum);
+        System.out.println("n\tSum");
 
+        for (int number = 1; number <= 100; number++) {
+            int sum = (number * (number + 1)) / 2;
+            System.out.println(number + "\t" + sum);
         }
     }
 }

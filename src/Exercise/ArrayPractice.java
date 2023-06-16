@@ -1,13 +1,11 @@
 package Exercise;
 
-import java.util.Arrays;
-
 public class ArrayPractice {
 
     public static int sumArray(int ... numbers){
         int total = 1;
         for (int number : numbers){
-            total += number * 1;
+            total += number;
         }
         return total;
     }
