@@ -5,8 +5,8 @@ public class DiamondPrintingProgram {
         int row;
         row = 5;
 
-        upperDiamond(row, 0); // print upper part of triangle
-        lowerDiamond(row, 1); // print lower part of diamond
+        upperDiamond(row, 0);
+        lowerDiamond(row, 1);
 
 
 

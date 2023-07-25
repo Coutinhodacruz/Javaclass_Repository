@@ -63,12 +63,11 @@ public class PetrolPurchase {
         return Quantity;
 
     }
-    public void Purchase() {
-        switch (getName()) {
-            case "Toyota Filling Station":
-                break;
-            default:
-                System.out.println();
-        }
+    public double Purchase(int quantity, double price) {
+        double value = quantity * price;
+
+
+
+        return value;
     }
 }
