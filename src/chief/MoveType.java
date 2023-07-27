@@ -1,0 +1,13 @@
+package chief;
+
+public enum MoveType {
+
+    TORTOISE_FAST_PLOD,
+    TORTOISE_SLIP,
+    TORTOISE_SLOW_PLOD,
+    HARE_SLEEP,
+    HARE_BIG_HOP,
+    HARE_BIG_SLIP,
+    HARE_SMALL_HOP,
+    HARE_SMALL_SLIP
+}
