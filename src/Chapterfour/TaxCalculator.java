@@ -3,21 +3,36 @@ package Chapterfour;
 import java.util.Scanner;
 
 public class TaxCalculator {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double tax;
-        System.out.println("Enter income ");
-        tax = scanner.nextDouble();
-        if(tax <= 200000)
-            tax = 0;
-        else if(tax <= 300000)
-            tax = 0.1 * (tax - 200000);
-        else if(tax <= 500000)
-            tax = (0.2 * (tax - 300000)) + (0.1 * 100000);
-        else if(tax <= 1000000)
-            tax = (0.3 * (tax - 500000)) / (0.2 * 200000) * (0.1*100000);
-        else
-            tax = (0.4 * (tax - 1000000)) * (0.3 * 500000) / (0.2*200000) + (0.1 * 100000);
-        System.out.println("Income tax amount is "+tax);
+
+        for (int i = 1; i <= 3; i++) {
+            System.out.println("Enter the name of Citizen " + i + ":");
+            String name = scanner.nextLine();
+
+            System.out.println("Enter the earnings of Citizen " + i + " in USD:");
+            double earnings = scanner.nextDouble();
+
+            double tax = calculateTax(earnings);
+            System.out.println(name + "'s total tax is: $" + tax);
+
+
+            scanner.nextLine();
+        }
+
+        scanner.close();
+    }
+
+    public static double calculateTax(double earnings) {
+        double taxRate = 0.15;
+        double ceiling = 30000;
+
+        if (earnings > ceiling) {
+            taxRate = 0.20;
+        }
+
+        return earnings * taxRate;
     }
 }
+
